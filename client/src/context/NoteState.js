@@ -9,7 +9,7 @@ const NoteState= (props)=>{
     const [userInfo,setuserInfo]= useState("");
 
     const getUserInfo=async()=>{
-       const host="http://localhost:5000"
+       const host="https://quicknotes-mq32.onrender.com"
        const url= `${host}/api/auth/getuser`
        const response = await fetch(url, {
        method: "POST",
