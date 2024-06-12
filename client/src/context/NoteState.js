@@ -29,7 +29,7 @@ const NoteState= (props)=>{
      },[])
      
      const fetchNotes= async()=>{
-      const host="http://localhost:5000"
+      const host="https://quicknotes-mq32.onrender.com"
       const url= `${host}/api/notes/fetchallnotes`
       const response = await fetch(url, {
         method: "GET",
