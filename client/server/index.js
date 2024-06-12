@@ -14,7 +14,7 @@ app.use(cors());
 app.use('/api/auth',require('./routes/auth'));
 app.use('/api/notes',require('./routes/notes'));
 
-const Port=  process.env.PORT
+const Port=  process.env.PORT || 4000
 app.listen(process.env.PORT,()=>{
     console.log(`connected to port  ${Port}`)
 });
