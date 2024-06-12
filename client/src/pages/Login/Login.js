@@ -37,7 +37,7 @@ const Login = ()=>{
 
          // Example POST method implementation:
       try{
-        const host="http://localhost:5000"
+        const host="https://quicknotes-mq32.onrender.com"
         const url= `${host}/api/auth/login`
         const response = await fetch(url, {
           method: "POST",
