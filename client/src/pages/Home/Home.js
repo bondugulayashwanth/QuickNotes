@@ -20,7 +20,7 @@ const Home = ()=>{
              return note._id!==id;
         })
         setNotes(newnotes);
-        const host="http://localhost:5000"
+        const host="https://quicknotes-mq32.onrender.com"
         const url= `${host}/api/notes/deletenote/${id}`
         await fetch(url, {
         method: "DELETE",
