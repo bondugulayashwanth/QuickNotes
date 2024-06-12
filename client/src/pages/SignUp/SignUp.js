@@ -41,7 +41,7 @@ const SignUp = ()=>{
 
        // Todo - API Call
 
-        const host="http://localhost:5000"
+        const host="https://quicknotes-mq32.onrender.com"
          const url= `${host}/api/auth/createuser`
          const response = await fetch(url, {
            method: "POST",
