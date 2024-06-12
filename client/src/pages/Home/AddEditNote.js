@@ -41,7 +41,7 @@ const AddEditNote= ({noteData,type, onDiscard})=>{
         // todo API CALL TO ADD NOTES
         
         try{
-            const host="http://localhost:5000"
+            const host="https://quicknotes-mq32.onrender.com"
             const url= `${host}/api/notes/addnote`
             const response = await fetch(url, {
             method: "POST",
